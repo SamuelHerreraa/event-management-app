@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Eventos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 20px;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 20px;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #5c67f2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #4a54e1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #f0f0f0;
+            border-top: 1px solid #e1e1e1;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a la Gestión de Eventos</h1>
+    <p>Esta es una página simple para la demostración de Helm y Kubernetes.</p>
+
+    <h2>Crear Evento</h2>
+    <form action="#" method="post">
+        <label for="eventName">Nombre del Evento:</label>
+        <input type="text" id="eventName" name="eventName"><br><br>
+
+        <label for="eventDate">Fecha del Evento:</label>
+        <input type="date" id="eventDate" name="eventDate"><br><br>
+
+        <button type="submit">Crear Evento</button>
+    </form>
+
+    <h2>Promocionar Evento</h2>
+    <form action="#" method="post">
+        <label for="promotionDetails">Detalles de la Promoción:</label>
+        <textarea id="promotionDetails" name="promotionDetails"></textarea><br><br>
+
+        <button type="submit">Promocionar</button>
+    </form>
+
+    <h2>Registro de Clientes</h2>
+    <form action="#" method="post">
+        <label for="customerName">Nombre del Cliente:</label>
+        <input type="text" id="customerName" name="customerName"><br><br>
+
+        <label for="customerEmail">Email del Cliente:</label>
+        <input type="email" id="customerEmail" name="customerEmail"><br><br>
+
+        <button type="submit">Registrar</button>
+    </form>
+
+    <h2>Pagos</h2>
+    <form action="#" method="post">
+        <label for="amount">Monto a Pagar:</label>
+        <input type="number" id="amount" name="amount" min="1" step="any"><br><br>
+
+        <button type="submit">Pagar</button>
+    </form>
+
+    <h2>Envío de Invitaciones</h2>
+    <form action="#" method="post">
+        <label for="inviteEmail">Email del Invitado:</label>
+        <input type="email" id="inviteEmail" name="inviteEmail"><br><br>
+
+        <button type="submit">Enviar Invitación</button>
+    </form>
+
+    <footer>
+        <p>Todos los derechos reservados por Samuel Herrera © 2024</p>
+    </footer>
+    
+
+
+</body>
+</html>
