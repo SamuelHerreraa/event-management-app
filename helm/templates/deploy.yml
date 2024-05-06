@@ -6,20 +6,20 @@ metadata:
     type: backend
     app: nodeapp
 spec:
-  replicas: 1
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
       type: backend
       app: nodeapp
   template:
     metadata:
-      name: nodeapp
       labels:
         type: backend
         app: nodeapp
     spec:
       containers:
       - name: nodeappcontainer
-        image: us.gcr.io/eventos1001/nodeapp:v1
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
-          - containerPort: 80
+          - containerPort: {{ .Values.service.port }}

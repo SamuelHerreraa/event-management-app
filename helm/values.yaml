@@ -1,0 +1,10 @@
+replicaCount: 1
+
+image:
+  repository: us.gcr.io/eventos1001/nodeapp
+  tag: v3
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 80
